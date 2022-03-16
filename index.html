@@ -7,7 +7,90 @@
 <title>App@Calculator</title>
 <link rel="stylesheet" href="/style.css">
 </head>
-<body>     
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    
+    
+}
+
+h1 {
+    margin: 15px;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-first {
+    position: relative;
+    background: rgba(73, 71, 71, 0.178);
+    border-radius: 2px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.container-first .calculator {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows:minmax(120px, auto) repeat(5,100px);
+    
+}
+
+.container-first .calculator .value {
+    grid-column: span 4;
+    height: 100px;
+    width: 380px;
+    border: none;
+    padding-left: 2em;
+    font-size: 2.5em;
+    color: rgb(29, 28, 27);
+}
+
+.container-first .calculator span {
+    display: grid;
+    height: 5em;
+    width: 80px;
+    font-weight: 68px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    user-select: none;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.07);
+    border-right: 4px solid rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+    cursor: pointer;
+    font: size 2rem;
+    border: 2px solid rgb(175, 171, 171);
+    outline: none;
+    background-color:rgba(205, 234, 241, 0.89)
+
+}
+
+input[type="text"] {
+background-color: wheat;
+}
+
+
+</style>
+<body>  
+       
 
 <h1>Calculator App</h1>
     <div class="container-first">
