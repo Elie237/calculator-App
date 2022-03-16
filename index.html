@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="./style.css">
-    <!-- <script src="script.js"deferred="</script -->
-</head>
-<body>
-<div class="Calculator-grid">
-<div class="output">
-<div class="previous-operation">123 +</div>
-<div class="next-operation">456</div>
-</div>
-<button class="span-one">AC</button>
-<button>DEL</button>
-<button>+</button>
-<button>1</button>
-<button>2</button>
-<button>3</button>
-<button>*</button>
-<button>4</button>
-<button>5</button>
-<button>6</button>
-<button>7</button>
-<button>7</button>
-<button>8</button>
-<button>9</button>
-<button>-</button>
-<button>.</button>
-<button>0</button>
-<button class="span-one">=</button>
-</div>
 
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>App@Calculator</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>     
+
+<h1>Calculator App</h1>
+    <div class="container-first">
+    <form name="val" class="calculator">
+    <input type="text" class="value" name="app" />
+    <span onclick="document.val.app.value+='4'">4</span>
+    <span onclick="document.val.app.value+='5'">5</span>
+    <span onclick="document.val.app.value+='6'">6</span>
+    <span onclick="document.val.app.value =eval(document.val.app.value)">=
+    </span>
+    <span onclick="document.val.app.value+='7'">7</span>
+    <span onclick="document.val.app.value+='8'">8</span>
+    <span onclick="document.val.app.value+='9'">9</span>
+    <span onclick="document.val.app.value+='-'">-</span>
+    <span onclick="document.val.app.value+='1'">1</span>
+    <span onclick="document.val.app.value+='2'">2</span>
+    <span onclick="document.val.app.value+='3'">3</span>
+    <span onclick="document.val.app.value+='/'">/</span>
+    <span onclick="document.val.app.value+='0'">0</span>
+    <span onclick="document.val.app.value=''">Clear</span>
+    <span onclick="document.val.app.value+='*'">*</span>
+    <span onclick="document.val.app.value+='+'">+</span>
+
+    </form>
+    </div>
 </body>
+
 </html>
